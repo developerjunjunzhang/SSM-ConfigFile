@@ -21,7 +21,7 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
-    public void saveAccount() {
-        System.out.println("业务层保存账户！！！");
+    public void saveAccount(Account account) {
+        accountDao.saveAccount(account);
     }
 }

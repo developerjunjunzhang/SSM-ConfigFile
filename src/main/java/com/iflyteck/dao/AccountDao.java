@@ -15,5 +15,5 @@ public interface AccountDao {
     List<Account> findAll ();
     // 保存账户
     @Insert("insert into account (name, money) values (#{name},#{money})")
-    void saveAccount ();
+    void saveAccount (Account account);
 }
